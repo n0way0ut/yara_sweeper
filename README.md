@@ -71,5 +71,7 @@ The initial idea comes from https://www.sans.org/reading-room/whitepapers/forens
 # TODO
 
 Git and REST server authentication
+
 Reuse cached compiled rules
+
 Upload matched files automatically on REST server
