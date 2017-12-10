@@ -1,4 +1,4 @@
-# Yara Sweeper
+# **Yara Sweeper**
 
 In a live Incident Response situation yara is useful for deploying across an enterprise environment, scanning processes running 
 in memory or files residing on disk. 
@@ -6,7 +6,7 @@ The aim of this tool is to run yara rules in a large scale environment.
 It works on Linux, Windows and OSX.
 
 
-# Use cases
+## Use cases
 
  - On demand sweep.  During Incident Response, quickly create your yara rules and push on rules git repository, 
 invoke the agent to perform the scan on files, directory or running process. 
@@ -14,7 +14,7 @@ invoke the agent to perform the scan on files, directory or running process.
 scheduled tasks to run regularly sweeping the endpoint for specified yara rules. Forward the syslog events to SIEM.
 
 
-# How it works
+## How it works
 
  - Invoke agent on-demand with salt/puppet/ansible on linux, wmi/psexec on windows or jamf on OSX, or create a scheduled task. 
  - Agent clones the yara git repository if it is the first run or just pulls new rules. 
@@ -46,7 +46,7 @@ scheduled tasks to run regularly sweeping the endpoint for specified yara rules.
 
 ![Yara Sweeper Dashboard](https://i.imgur.com/uiu8qjw.png)
 
-# Configuration
+## Configuration
 
     [main]
     rules_path = rules
@@ -64,11 +64,11 @@ scheduled tasks to run regularly sweeping the endpoint for specified yara rules.
     #pwd = <password>
 
 
-# Notes
+## Notes
 
 The initial idea comes from https://www.sans.org/reading-room/whitepapers/forensics/intelligence-driven-incident-response-yara-35542
 
-# TODO
+## TODO
 
 Git and REST server authentication
 
